@@ -147,7 +147,7 @@ The selected book should now be removed from the list of books on the homepage.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/christianonoh/math-wizardry/issues).
+Feel free to check the [issues page](https://github.com/christianonoh/book-town/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
