@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { FaTrash } from 'react-icons/fa';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
+import Button from './Button';
 
 const Book = ({ book }) => {
   const dispatch = useDispatch();
@@ -13,9 +14,7 @@ const Book = ({ book }) => {
         <h3>{book.title}</h3>
         <h4>{book.author}</h4>
       </div>
-      <button type="submit" className="btn-icon" onClick={() => dispatch(removeBook(book.item_id))}>
-        <FaTrash />
-      </button>
+      <Button handleClick={() => dispatch(removeBook(book.item_id))} title={<FaTrash />} className="btn-icon" />
     </div>
   );
 };
