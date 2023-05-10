@@ -111,10 +111,15 @@ nav a {
   flex-direction: column;
 }
 
-.form-control input {
+.form-control input,
+.form-control select {
   width: 90%;
   height: 40px;
   margin: 0.3rem auto;
   padding: 0.3rem 0.5rem;
   font-size: 17px;
+}
+
+.form-control select {
+  /* padding: 1rem; */
 }
