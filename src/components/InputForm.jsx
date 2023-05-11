@@ -37,7 +37,7 @@ const InputForm = () => {
   };
 
   return (
-    <form className="form-control" onSubmit={handleSubmit}>
+    <form className="form-control">
       <input
         type="text"
         id="book-title"
@@ -62,7 +62,7 @@ const InputForm = () => {
         <option value="self-help">Self help</option>
         <option value="other">Other</option>
       </select>
-      <Button title="Add book" className="btn btn-block" />
+      <Button title="Add book" handleClick={handleSubmit} className="btn btn-block" />
     </form>
   );
 };
