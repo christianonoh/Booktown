@@ -10,7 +10,10 @@ const Button = ({
 
 Button.propTypes = {
   className: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
+  title: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.element,
+  ]).isRequired,
   handleClick: PropTypes.func.isRequired,
 };
 
