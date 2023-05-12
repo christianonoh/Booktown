@@ -9,7 +9,7 @@
 }
 
 :root {
-  --Black: #333;
+  --Black: #000;
   --Grey: #ccc;
   --White: #eee;
 }
@@ -83,11 +83,24 @@ nav a {
   font-family: inherit;
 }
 
+/* Book Component  */
+.book-btns { margin: 0.5rem 0; }
+
+.book-btns :nth-child(1),
+.book-btns :nth-child(2) {
+  border-right: 1px solid var(--Black);
+}
+
+.book-btns :nth-child(1) {
+  padding-left: unset;
+}
+
 .btn-icon {
   color: var(--Black);
   font-size: 1rem;
   background-color: unset;
   border: unset;
+  padding: 0 1vmin;
 }
 
 .btn:focus {
@@ -120,6 +133,55 @@ nav a {
   font-size: 17px;
 }
 
-.form-control select {
-  /* padding: 1rem; */
+/* Progress  */
+
+.book-details-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .book {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  .update-progress {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+    border-top: 1px solid var(--Black);
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .update-progress button {
+    width: 100%;
+    font-size: smaller;
+  }
+
+  .book-btns {
+    font-size: smaller;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .book {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  .book-details-cont {
+    border-right: 1px solid var(--Black);
+    padding-right: 5vmin;
+    margin-right: 5vmin;
+  }
+  .update-progress button { width: 100%; }
+
+  .form-control {
+    max-width: 800px;
+    margin: 1.5rem auto;
+  }
 }
