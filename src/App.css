@@ -13,7 +13,8 @@
   --Black: #000;
   --Grey: #ccc;
   --PaleGrey: #888;
-  --White: #eee;
+  --White: #fff;
+  --PaleWhite: #fafafa;
   --Blue: #0290ff;
   --DarkBlue: #4386bf;
 }
@@ -23,7 +24,7 @@ body {
   font-family: 'Roboto Slab', serif;
   font-style: normal;
   overflow-x: hidden;
-  background-color: var(--White);
+  background-color: var(--PaleWhite);
   color: var(--Black);
 }
 
@@ -43,6 +44,7 @@ nav {
   align-items: center;
   padding: 1rem 10vmin 0.2rem 10vmin;
   border-bottom: 1px solid var(--Grey);
+  background-color: var(--White);
 }
 
 .nav-items {
