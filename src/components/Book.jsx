@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { removeBook } from '../redux/books/booksSlice';
 import Button from './Button';
+import CircularProgress from './Progress';
+import UpdateProgress from './UpdateProgress';
 
 const Book = ({
   category, title, author, id,
@@ -10,12 +12,24 @@ const Book = ({
   const dispatch = useDispatch();
   return (
     <div className="book">
-      <div className="book-details">
-        <h5>{category}</h5>
-        <h3>{title}</h3>
-        <h4>{author}</h4>
+      <div className="book-details-cont">
+        <div className="book-details">
+          <h5>{category}</h5>
+          <h3>{title}</h3>
+          <h5>{author}</h5>
+          <span className="book-btns">
+            <Button handleClick={() => dispatch(removeBook(id))} title="Comments" className="btn-icon" />
+            <Button handleClick={() => dispatch(removeBook(id))} title="Remove" className="btn-icon" />
+            <Button handleClick={() => dispatch(removeBook(id))} title="Edit" className="btn-icon" />
+          </span>
+        </div>
+        <CircularProgress percentage={60} />
       </div>
-      <Button handleClick={() => dispatch(removeBook(id))} title="remove" className="btn-icon" />
+
+      <div className="book-progress">
+        <UpdateProgress />
+      </div>
+
     </div>
   );
 };
