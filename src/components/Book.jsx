@@ -14,9 +14,9 @@ const Book = ({
     <div className="book">
       <div className="book-details-cont">
         <div className="book-details">
-          <h5>{category}</h5>
-          <h3>{title}</h3>
-          <h5>{author}</h5>
+          <h5 id="book-category">{category}</h5>
+          <h3 id="book-title-display">{title}</h3>
+          <h5 id="book-author">{author}</h5>
           <span className="book-btns">
             <Button handleClick={() => dispatch(removeBook(id))} title="Comments" className="btn-icon" />
             <Button handleClick={() => dispatch(removeBook(id))} title="Remove" className="btn-icon" />

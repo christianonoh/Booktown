@@ -37,33 +37,36 @@ const InputForm = () => {
   };
 
   return (
-    <form className="form-control">
-      <input
-        type="text"
-        id="book-title"
-        placeholder="Add book title..."
-        value={title}
-        onChange={handleChange}
-      />
-      <input
-        type="text"
-        id="book-author"
-        placeholder="Add book author..."
-        value={author}
-        onChange={handleChange}
-      />
-      <select id="category" value={category} onChange={handleChange}>
-        <option value="" disabled>
-          Choose a category
-        </option>
-        <option value="thriller">Thriller</option>
-        <option value="romance">Romance</option>
-        <option value="fiction">Fiction</option>
-        <option value="self-help">Self help</option>
-        <option value="other">Other</option>
-      </select>
-      <Button title="Add book" handleClick={handleSubmit} className="btn btn-block" />
-    </form>
+    <section className="form-container">
+      <h2>Add Book</h2>
+      <form className="form-control">
+        <input
+          type="text"
+          id="book-title"
+          placeholder="Add book title..."
+          value={title}
+          onChange={handleChange}
+        />
+        <input
+          type="text"
+          id="book-author"
+          placeholder="Add book author..."
+          value={author}
+          onChange={handleChange}
+        />
+        <select id="category" value={category} onChange={handleChange}>
+          <option value="" disabled>
+            Category
+          </option>
+          <option value="Thriller">Thriller</option>
+          <option value="Romance">Romance</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Self-help">Self help</option>
+          <option value="Other">Other</option>
+        </select>
+        <Button title="Add book" handleClick={handleSubmit} className="btn btn-block" />
+      </form>
+    </section>
   );
 };
 export default InputForm;

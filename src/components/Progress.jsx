@@ -21,7 +21,7 @@ const CircularProgress = ({ percentage }) => {
           cx="60"
           cy="60"
           r="50"
-          stroke="#000"
+          stroke="#0290ff"
           strokeWidth="10"
           fill="transparent"
           strokeDasharray={`${circumference} ${circumference}`}

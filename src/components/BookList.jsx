@@ -17,9 +17,7 @@ const BookList = () => {
 
   return (
     <section className="booklist-container">
-      <h1>Books</h1>
-      <div>
-        {
+      {
         bookdata.map((book) => (
           <Book
             key={book.id}
@@ -30,7 +28,6 @@ const BookList = () => {
           />
         ))
       }
-      </div>
     </section>
   );
 };
