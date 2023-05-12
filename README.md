@@ -155,7 +155,7 @@ Feel free to check the [issues page](https://github.com/christianonoh/book-town/
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you enjoy using Math Wizardry, please consider supporting us to help keep the app free and accessible for everyone. Thanks for your support!
+If you enjoy using Book Town, please consider supporting us to help keep the app free and accessible for everyone. Thanks for your support!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
