@@ -1,0 +1,51 @@
+.progressCont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress {
+  text-align: center;
+}
+
+.progress :nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.progress :nth-child(2) {
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+.CircularProgress {
+  width: 100%;
+  max-width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .progressCont {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .CircularProgress {
+    width: 100%;
+    max-width: 10vmin;
+  }
+
+  .progress :nth-child(1) {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .progress :nth-child(2) { font-size: 0.8rem; }
+}
+
+@media screen and (min-width: 768px) {
+  .CircularProgress {
+    width: 100%;
+    max-width: 100px;
+  }
+}
